@@ -1,3 +1,4 @@
+
 .container
     max-width: 1100px
     margin: auto
@@ -24,12 +25,16 @@
             justify-content: space-between
             margin: auto
             overflow: hidden
-            padding-bottom: 52px
+
             &_card
                 background-color: #fff
                 width: 300px
                 border-radius: 8px
                 padding-left: 16px
+
+                padding-bottom: 15px
+                height: 300px
+
                 &-name
                     font-family: Manrope
                     font-style: normal
@@ -48,10 +53,19 @@
                     line-height: 19px
                     color: #0C0C0C
                     max-width: 250px
+                    overflow-y: auto
+                    height: 230px
+                    padding-right: 15px
+
     &__pagination
-        left: 10%
+        padding-top: 48px
+        width: 90%
+        padding-bottom: 68px
 
         &__page
+            border: none
+            margin-right: 15px
+            border-radius: 50%
             width: 16px
             height: 16px
 
@@ -60,5 +74,76 @@
             &-active
                 width: 24px
                 height: 24px
-                color: #fff
+
                 background: #FFFFFF
+    &__arrow
+        position: absolute
+        z-index: 1
+        top: 50%
+        transform: translateY(-50%)
+        width: 2em
+        height: 2em
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        border: none
+        padding: 0
+        opacity: .7
+        background: #ccc
+        &--next
+            position: absolute
+            z-index: 1
+            top: 40%
+            transform: translateY(-50%)
+
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            border: none
+            padding: 0
+            opacity: .7
+            background: #ccc
+            right: -10%
+            padding: 24px
+            background: #FFFFFF
+            border-radius: 16px
+            &:hover
+                background: grey
+
+        &--prev
+            position: absolute
+            z-index: 1
+            top: 40%
+            transform: translateY(-50%)
+            transform: rotate (180deg)
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            border: none
+            padding: 24px
+            left: -10%
+            opacity: .7
+            background: #666666
+            border-radius: 16px
+            &:hover
+                background: #535353
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar
+    width: 3px
+    height: 40px
+
+    background: #ffffff
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb
+    width: 3px
+    height: 40px
+
+    background: #0C0C0C
+
+::-webkit-scrollbar-thumb:hover
+    background-color: #253861
