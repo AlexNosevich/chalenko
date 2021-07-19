@@ -13,7 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/pagination.min.css">
     <link rel="stylesheet" href="css/navigation.min.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    <link rel="stylesheet" href="css/remodal.css">
     <link rel="stylesheet" href="css/splide-core.min.css">
+    <link rel="stylesheet" href="css/iziModal.min.css">
     <link rel="stylesheet" href="css/splide.min.css">
     
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,12 +26,12 @@
 <body>
     <div class="container-top">
         <header class="header">
-            <div class="header-logo">
+            <div class="header-logo" id="text">
                 <img src="img/logo-2.png" alt="logo">
                 <!--<span class="header-logo-text">Study Load</span>-->
             </div>
             <!-- /.header-logo -->
-            <nav class="header_nav">
+            <nav  id="navbar" class="header_nav navbar">
                 <a href="#" class="header_nav-link">Обо мне</a>
                 <a href="#" class="header_nav-link">Преимущества</a>
                 <a href="#" class="header_nav-link">Цена</a>
@@ -37,7 +40,27 @@
             </nav>
             <!-- /.header-nav -->
             <a href="tel:+79000000000" class="header-tel">+7 (900) 00-00-000</a>
+            <button id="hider"  class="tablet"><img src="img/tablet-button.png" alt="Меню"></button>
+            <button id="shower" class="tablet-close"><img src="img/tablet-button-close.png" alt="Меню"></button>
+            
+            
+            <div class="navbar-bottom">
+                <div class="container">
+                    <nav class="header_nav navbar">
+                        <a href="#" class="header_nav-link">Обо мне</a>
+                        <a href="#" class="header_nav-link">Преимущества</a>
+                        <a href="#" class="header_nav-link">Цена</a>
+                        <a href="#" class="header_nav-link">Отзывы</a>
+                        <a href="#" class="header_nav-link">Контакты</a>
+                    </nav>
+                    <!-- /.header-nav -->
+                    <a href="tel:+79000000000" class="header-tel">+7 (900) 00-00-000</a>
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.navbar-bottom -->
         </header>
+
         <!-- /.header -->
     </div>
     <!-- /.container-top -->
@@ -394,14 +417,15 @@
         </div>
         <!-- /.modal__dialog -->
     </div>
-    <!-- /.modal -->
-
-
+    
+    
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/splide.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/iziModal.min.js"></script>
+    <script src="js/remodal.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

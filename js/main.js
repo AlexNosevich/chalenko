@@ -57,3 +57,39 @@ splide.mount();
       }
     }
   });
+var menuButton = $('.menu-button');
+  menuButton.on('click' , function() {
+    $('.navbar-bottom').toggleClass('navbar-bottom--visible');
+  });
+
+//модалка для хедера планшет
+var modalHeaderButton = $('[data-toggle=modal_header]');
+var closeModalHeaderButton = $('.modal_header__close');
+modalHeaderButton.on('click', openModalHeader);
+closeModalHeaderButton.on('click', closeModalHeader)
+
+function openModalHeader () {
+  var targetModalHeader = $(this).attr("data-href");
+  $(targetModalHeader).find('.modal_header__overlay').addClass('modal_header__overlay--visible');
+  $(targetModalHeader).find('.modal_header__dialog').addClass('modal_header__dialog--visible');
+}
+function closeModalHeader (event) {
+  event.preventDefault ();
+  var modalHeaderOverlay = $('.modal_header__overlay');
+  var modalHeaderDialog = $('.modal_header__dialog');
+  modalHeaderOverlay.removeClass('modal_header__overlay--visible');
+  modalHeaderDialog.removeClass('modal_header__dialog--visible');   
+}
+
+ document.getElementById('hider').onclick = function() {
+  document.getElementById('text').hidden = true;
+  document.getElementById('hider').style.display = "none";
+  document.getElementById('shower').style.display = "block";
+  document.getElementById('navbar').style.visibility = "visible";
+  }
+document.getElementById('shower').onclick = function() {
+  document.getElementById('text').hidden = false;
+  document.getElementById('shower').style.display = "none";
+  document.getElementById('hider').style.display = "block";
+  document.getElementById('navbar').style.visibility = "hidden";
+  }

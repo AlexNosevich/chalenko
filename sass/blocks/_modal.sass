@@ -104,3 +104,110 @@
         font-weight: bold
         font-size: 12px
         line-height: 15px
+
+.modal
+    &_header
+        &__overlay
+            position: fixed
+            left: 0
+            top: 0
+            right: 0
+            bottom: 0
+            background: rgba(0, 0, 0, 0.35)
+            z-index: 100
+            visibility: hidden
+            opacity: 0
+            transition: opacity 0.2s
+            &--visible
+                visibility: visible
+                opacity: 1
+        &__dialog
+            position: fixed
+
+            width: 590px
+
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            padding: 33px 88px
+
+            background: #FFFFFF
+            border-radius: 16px
+            z-index: 101
+            visibility: hidden
+            opacity: 0
+            transition: opacity 0.2s
+            &--visible
+                visibility: visible
+
+                opacity: 1
+
+        &__close
+            position: absolute
+            top: 17px
+            right: 24px
+            text-decoration: none
+            cursor: pointer
+        &__form
+
+            display: flex
+            align-items: center
+            flex-direction: column
+            flex-wrap: wrap
+        &__title
+            font-family: Manrope
+            font-style: normal
+            font-weight: bold
+            font-size: 32px
+            line-height: 44px
+            text-align: center
+            color: #000000
+            padding-bottom: 16px
+        &__text
+            font-family: Manrope
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 22px
+            text-align: center
+            color: #000000
+            padding-bottom: 17px
+        &__input
+            width: 220px
+            border: 1px solid #ECECEC
+            box-sizing: border-box
+            border-radius: 4px
+            display: flex
+            flex-direction: column
+            padding-top: 11px
+            padding-bottom: 11px
+            padding-left: 16px
+            margin-top: 15px
+        &__input::placeholder
+            font-family: Manrope
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 22px
+            color: #AAAAAA
+
+        &__button
+
+            font-family: Manrope
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 22px
+            background: #0C0C0C
+            border-radius: 4px
+            color: #FFFFFF
+            padding: 13px 69px
+            outline: none
+            margin-top: 32px
+            &::focus
+                outline: none
+        &__info
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
