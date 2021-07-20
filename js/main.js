@@ -81,6 +81,8 @@ function closeModalHeader (event) {
   modalHeaderDialog.removeClass('modal_header__dialog--visible');   
 }
 
+
+// Скрипт для хедера планшет
  document.getElementById('hider').onclick = function() {
   document.getElementById('text').style.display = "none";
   document.getElementById('hider').style.display = "none";
