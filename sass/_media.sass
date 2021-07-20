@@ -52,6 +52,10 @@
             padding-top: 137px
 
 @media  ( max-width: 992px )
+    .container
+        max-width: 768px
+        &-top
+            max-width: 768px
     .header
 
         &-tel
@@ -72,7 +76,7 @@
             bottom: 0
             background: rgba(0, 0, 0, 0.35)
             z-index: 100
-            visibility: hidden
+            visibility: hidden //меняю с visib hid на disp none
             opacity: 0
             transition: opacity 0.2s
             &--visible
@@ -191,3 +195,65 @@
         display: block
     #navbar
         visibility: hidden
+    .shift
+        padding-bottom: 88px
+        &_description
+            &-text
+                font-size: 24px
+        &-whyme
+            padding-top: 68px
+            padding-bottom: 52px
+        &-price
+            padding-top: 74px
+            padding-bottom: 80px
+        &_cost
+            &-title
+                font-size: 20px
+            &_button
+                font-size: 24px
+    .contacts
+        padding-bottom: 56px
+        &-title
+            font-size: 32px
+            padding-top: 56px
+        &-text
+            font-size: 18px
+    .footer
+        &_wrapper
+            max-width: 768px
+            margin: auto
+    .splide
+        &__slide
+            &_wrapper
+                &_card
+                    width: 216px
+                    &-text
+                        font-size: 12px
+    #phone
+        display: none
+    .about
+        margin-top: 0
+        &_description
+            &_wrapper
+                &-title
+                    font-size: 32px
+                &-text
+                    font-size: 14px
+                    width: 342px
+    .main
+        padding-bottom: 91px
+        padding-top: 32px
+        &_title
+            &-strong
+                font-size: 40px
+            &-name
+                font-size: 40px
+        &-description
+            font-size: 24px
+    .requires
+        &-title
+            font-size: 32px
+    #why1
+        display: none
+    #why2
+        display: block

@@ -86,10 +86,12 @@ function closeModalHeader (event) {
   document.getElementById('hider').style.display = "none";
   document.getElementById('shower').style.display = "block";
   document.getElementById('navbar').style.visibility = "visible";
+  document.getElementById('phone').style.display = "block"
   }
 document.getElementById('shower').onclick = function() {
   document.getElementById('text').style.display = "block";
   document.getElementById('shower').style.display = "none";
   document.getElementById('hider').style.display = "block";
   document.getElementById('navbar').style.visibility = "hidden";
+  document.getElementById('phone').style.display = "none"
   }
